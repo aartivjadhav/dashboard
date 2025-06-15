@@ -27,17 +27,3 @@ elif st.session_state.page == "Attrition Analysis":
     ch.Attrition_Analysis()
 
 ########################################################################################
-# age and distancefromhome binning
-# convert date to datetime?
-# HR Overview page
-# department wise - number of employees, aittrated employees, avg age, avg salary, avg years at company, 
-# gender pie chart or donut chart
-# statewise total employees
-# ethinicity and total employees
-# year and Total Employees
-
-# Aitration page
-# atrition by age, salary, experience, satisfaction, rating
-
-# forecast
-# forecasting atrition rate
