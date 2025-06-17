@@ -416,7 +416,9 @@ def Attrition_Analysis():
                         
             cells=dict(values=[final_df[col] for col in final_df.columns],
                 fill_color="#F6F5F3",
-                align='left')
+                align='left',
+                font=dict(color='black', size=12, family='Serif')
+                )
             )])
     fig.update_layout(margin=dict(l=0, r=0, t=0, b=0), height=150)
     st.plotly_chart(fig,use_container_width=True)
