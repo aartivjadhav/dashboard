@@ -409,13 +409,13 @@ def Attrition_Analysis():
     fig = go.Figure(data=[go.Table(
             columnwidth=[2,2,2,1,2,2,2,2,2],
             header=dict(values=[f"<b>{col}</b>" for col in final_df.columns],
-                fill_color='paleturquoise',
+                fill_color="#F58506",
                 align='left',
                 font=dict(color='black', size=12, family='Serif')
             ),
                         
             cells=dict(values=[final_df[col] for col in final_df.columns],
-                fill_color='lavender',
+                fill_color="#F6F5F3",
                 align='left')
             )])
     fig.update_layout(margin=dict(l=0, r=0, t=0, b=0), height=150)
