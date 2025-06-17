@@ -244,7 +244,7 @@ def Employee_Performance():
         with col2:
             fig = go.Figure(data=[go.Table(
                     header=dict(values=list(de.RatingLevel.columns),
-                                fill_color='paleturquoise',
+                                fill_color='turquoise',
                                 align='left',
                                 font=dict(color='black', size=12, family='Serif')
                                 ),
@@ -261,7 +261,7 @@ def Employee_Performance():
         with col3:
             fig = go.Figure(data=[go.Table(
                     header=dict(values=list(de.SatisfiedLevel.columns),
-                                fill_color='paleturquoise',
+                                fill_color='turquoise',
                                 align='left',
                                 font=dict(color='black', size=12, family='Serif')
                                 ),
