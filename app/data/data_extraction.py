@@ -2,15 +2,15 @@ import streamlit as st
 import pandas as pd
 import datetime
 
-Education_level = pd.read_csv('data\EducationLevel.csv') 
+Education_level = pd.read_csv('data/EducationLevel.csv') 
 
-Employee = pd.read_csv('data\Employee.csv')
+Employee = pd.read_csv('data/Employee.csv')
 
-PerformanceRating = pd.read_csv('data\PerformanceRating.csv')
+PerformanceRating = pd.read_csv('data/PerformanceRating.csv')
 
-RatingLevel = pd.read_csv('data\RatingLevel.csv')
+RatingLevel = pd.read_csv('data/RatingLevel.csv')
 
-SatisfiedLevel = pd.read_csv('data\SatisfiedLevel.csv')
+SatisfiedLevel = pd.read_csv('data/SatisfiedLevel.csv')
 
 merge_data_emp = pd.merge(PerformanceRating,Employee,how='left',on='EmployeeID')    
 data = pd.merge(merge_data_emp,Education_level,how='left',left_on='Education',right_on='EducationLevelID')
