@@ -250,9 +250,10 @@ def Employee_Performance():
                                 ),
                     cells=dict(values=[de.RatingLevel.RatingID, de.RatingLevel.RatingLevel],
                             fill_color='lavender',
-                            align='left'),
+                            align='left',
                             font=dict(color='black', size=12, family='Serif')
-                            )
+                            ),
+                        )
                 ])
             fig.update_layout(margin=dict(l=0, r=0, t=0, b=0), height=160)
             st.plotly_chart(fig,use_container_width=True)
@@ -262,12 +263,14 @@ def Employee_Performance():
                     header=dict(values=list(de.SatisfiedLevel.columns),
                                 fill_color='paleturquoise',
                                 align='left',
-                                font=dict(color='black', size=12, family='Serif')),
+                                font=dict(color='black', size=12, family='Serif')
+                                ),
                     cells=dict(values=[de.SatisfiedLevel.SatisfactionID, de.SatisfiedLevel.SatisfactionLevel],
                             fill_color='lavender',
-                            align='left'),
+                            align='left',
                             font=dict(color='black', size=12, family='Serif')
                             )
+                        )
                 ])
             fig.update_layout(margin=dict(l=0, r=0, t=0, b=0), height=160)
             st.plotly_chart(fig,use_container_width=True)
